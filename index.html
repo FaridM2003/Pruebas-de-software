@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de tarjeta de bancarias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de tarjeta de bancarias</h1>
+
+        <form action="#">
+            <label for="nombre">Nombre del titular:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="numero">Número de tarjeta:</label>
+            <input type="number" id="numero" name="numero" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="number" id="cvv" name="cvv" required>
+
+            <label for="fechaVencimiento">Fecha de vencimiento:</label>
+            <input type="month" id="fechaVencimiento" name="fechaVencimiento" required>
+
+            <label for="tipo">Tipo de tarjeta:</label>
+            <select id="tipo" name="tipo" required>
+                <option value="credito">Crédito</option>
+                <option value="debito">Débito</option>
+            </select>
+
+            <button type="submit">Registrar tarjeta</button>
+        </form>
+    </div>
+</body>
+</html>
